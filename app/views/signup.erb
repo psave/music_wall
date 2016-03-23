@@ -1,6 +1,6 @@
-<h1>Home Page</h1>
-
-<% if !current_user %>
+<% if current_user %>
+  <div>Logged in user: <%= current_user %></div>
+<% else %>
   <form method="POST" action="/signup">
     <input type="text" name="name" placeholder="Name" />
     <input type="text" name="email" placeholder="Email" />
@@ -8,5 +8,3 @@
     <input type="submit" value="Signup"/>
   </form>
 <% end %>
-<br>
-<div> <a href="/login">Log in</a></div>

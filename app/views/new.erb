@@ -1,0 +1,36 @@
+<% if @song && @song.errors.any? %>
+  <div>
+    <strong> Some issues with your song, please fix them:</strong>
+    <ul>
+      <% @song.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+    </ul>
+  </div>
+<% end %>
+
+<form method="POST" action="/songs">
+  <div>
+    <label>Artist:</label>
+    <input type="text" name="artist">
+  </div>
+<!--   <div>
+    <label>Subject:</label>
+    <input type="text" name="title">
+  </div> -->
+  <div>
+    <label>Song Title:</label>
+    <input type="text" name="title">
+  </div>
+  <div>
+    <label>Lyrics:</label>
+    <input type="text" name="lyrics">
+  </div>
+  <div>
+    <label>URL:</label>
+    <input type="text" name="url">
+  </div>
+  <div>
+    <input type="submit" value="Submit">
+  </div>
+</form>
