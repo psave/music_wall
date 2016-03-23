@@ -3,7 +3,7 @@ helpers do
   # Returns nil if the user is not logged in
   def current_user
     if session[:user_id]
-      User.find(session[:user_id]).email
+      User.find(session[:user_id])
     end
   end
 end
@@ -24,12 +24,17 @@ get '/new' do
 end
 
 post '/songs' do
-  @song = Song.new(
+  artist = Artist.where(name: params[:artist]).first_or_create
+  # @song = Song.new(params)
+   # {"artist"=>"Hello", "title"=>"Hello", "lyrics"=>"Helo", "url"=>"www.hello.com"}
+  @song = Song.new({
     title: params[:title],
     genre: params[:genre],
     lyrics: params[:lyrics],
-    lyrics: params[:lyrics]
-    )
+    url: params[:url]
+    })
+  @song.artist = artist
+  @song.user = current_user
   if @song.save
     redirect '/songs'
   else
@@ -43,9 +48,9 @@ get '/songs/:id' do
 end
 
 # How do I edit the below????
-get '/show/:userid' do
-  @songs = Song.where(:author => params[:userid])
-  erb :authormessages
+get '/show/:ketchup' do
+  @songs = Song.where(:user_id => params[:ketchup])
+  erb :usersongs
 end
 
 get '/signup' do

@@ -1,10 +1,12 @@
+<a href="/new">Add New Song</a>
+
 <% @songs.each do |song| %>
   <div class="song">
     <h3><a href="/songs/<%= song.id %>"><small>(Added by: <%=  song.user.try(:name)%>)</small></h3>
-    <p>
+    <p>Title:
       <i><font color="green"><%= song.title %></font></i>
     </p>
-    <p>
+    <p>Lyrics:
       <i><font color="blue"><%= song.lyrics %></font></i>
     </p>
     <hr width="50%" align="left">

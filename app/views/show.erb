@@ -1,0 +1,26 @@
+<p>
+  Artist: <%= @song.artist.name %>
+</p>
+<p>
+  Title: <%= @song.title %>
+</p>
+<p>
+  Genre: <%= @song.genre %>
+</p>
+
+<p>
+  <%= @song.lyrics %>
+</p>
+
+<p>
+  <%= @song.url %>
+</p>
+
+<p>
+  Other Songs from this artist: 
+  <a href="/show/ <%= @song.artist %>">Show</a>
+</p>
+
+<hr/>
+<a href="/songs">Back to All Messages</a>
+
