@@ -2,43 +2,44 @@
 <div class="headline">
 <div class="homepage-hero-module">
     <div class="video-container">
+
      <div class="title-container">
         <h2><span>Tuneage.com<br /></h2>
         <h3 class="text-white text-thin">tunes designed just for you</h3>
+
       <% if !current_user %>
         <form class="form-inline" method="POST" action="/signup">
           <div class="form-group">
             <label class="sr-only" for="exampleInputEmail3">User Name</label>
             <input type="text" name="name" class="form-control" id="exampleInputEmail3" placeholder="User Name">
           </div>
+
           <div class="form-group">
             <label class="sr-only" for="exampleInputEmail3">Email address</label>
             <input type="email" name="email" class="form-control" id="exampleInputEmail3" placeholder="Email">
           </div>
+
           <div class="form-group">
             <label class="sr-only" for="exampleInputPassword3">Password</label>
             <input type="password" name="password" class="form-control" id="exampleInputPassword3" placeholder="Password">
           </div>
+
           <div class="checkbox">
             <label>
               <input type="checkbox"> Remember me
             </label>
           </div>
+          
           <button type="submit" class="btn btn-default">Signup</button>
         </form>
-<!--         <form method="POST" action="/signup">
-          <input type="text" name="name" placeholder="Name" />
-          <input type="text" name="email" placeholder="Email" />
-          <input type="text" name="password" placeholder="password" />
-          <input type="submit" value="Signup"/>
-        </form> -->
       <% end %>
       <br>
       <div style="text-align: center"> <a href="/login">Log in</a></div>
      </div>
-        <div class="filter"></div>
-        <video autoplay loop class="fillWidth">
 
+        <div class="filter"></div>
+
+        <video autoplay loop class="fillWidth">
             <source src="/video/Cheer-Up/MP4/Cheer-Up.mp4" type="video/mp4" />Your browser does not support the video tag. I suggest you upgrade your browser.
             <source src="/video/Cheer-up/WEBM/Cheer-Up.webm" type="video/webm" />Your browser does not support the video tag. I suggest you upgrade your browser.
         </video>

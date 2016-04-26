@@ -44,10 +44,9 @@ end
 
 get '/songs/:id' do
   @song = Song.find params[:id]
-  erb :'show'
+  erb :show
 end
 
-# How do I edit the below????
 get '/show/:ketchup' do
   @songs = Song.where(:user_id => params[:ketchup])
   erb :usersongs
@@ -92,7 +91,7 @@ post '/login' do
     # the database.
     #     user = User.find(session[:user_id])
     session[:user_id] = user.id
-    redirect '/new'
+    redirect '/songs'
   else
     # Load the home page. 
     @message = "Invalid username or password."
