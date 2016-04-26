@@ -1,0 +1,1434 @@
+html, body{
+    font-family: 'Open Sans', sans-serif !important;
+}
+
+body {
+    position: relative;
+}
+
+.homepage-hero-module {
+    border-right: none;
+    border-left: none;
+    position: relative;
+}
+.no-video .video-container video,
+.touch .video-container video {
+    display: none;
+}
+.no-video .video-container .poster,
+.touch .video-container .poster {
+    display: block !important;
+}
+.video-container {
+    position: relative;
+    bottom: 0%;
+    left: 0%;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    /*background: #000;*/
+}
+.video-container .poster img {
+    width: 100%;
+    bottom: 0;
+    position: absolute;
+}
+.video-container .filter {
+    z-index: 100;
+    position: absolute;
+    /*background: rgba(0, 0, 0, 0.4);*/
+    width: 100%;
+}
+.video-container .title-container {
+    z-index: 1000;
+    position: absolute;
+    top: 35%;
+    width: 100%;
+    text-align: center;
+    /*color: #fff;*/
+}
+.video-container .description .inner {
+    font-size: 1em;
+    width: 45%;
+    margin: 0 auto;
+}
+.video-container .link {
+    position: absolute;
+    bottom: 3em;
+    width: 100%;
+    text-align: center;
+    z-index: 1001;
+    font-size: 2em;
+    color: #fff;
+}
+.video-container .link a {
+    /*color: #fff;*/
+}
+.video-container video {
+    position: absolute;
+    z-index: 0;
+    bottom: 0;
+}
+.video-container video.fillWidth {
+    width: 100%;
+}
+
+.text-white{
+    color: #fff !important;
+}
+
+.text-thin{
+    font-weight: 100;
+}
+
+.video-layout {
+    border-radius: 4px;
+    /*box-shadow: 0 0 10px #ccc;*/
+
+}
+
+.today-video{
+    width: 500px !important;
+    height: 281px !important;
+}
+
+.grid-item{
+    margin-bottom: 30px;
+}
+
+.grid-img{
+    background-size:cover !important;
+    overflow:hidden;
+    width: 360px;
+    height: 202px;
+}
+
+.overlay{
+    /*background:rgba(0,0,0,.75);*/
+    text-align:center;
+    opacity:0;
+    -webkit-transition: opacity .25s ease;
+    -moz-transition: opacity .25s ease;
+    border-radius: 4px;
+    height: 100%;
+    width: 100%;
+    display: table;
+    cursor: pointer;
+}
+
+.overlay .play-button{
+    display: table-cell;
+    color: #fff;
+    vertical-align: middle;
+    font-size: 80px;
+
+}
+
+.grid-img:hover .overlay{
+    opacity:1;
+}
+
+.img-name{
+    position: absolute;
+    bottom: -10px;
+    right: 25px;
+    color: #EEE;
+    font-weight: 400 !important;
+}
+
+.img-label{
+    position: absolute;
+    top: 10px;
+    left: 25px;
+    color: #EEE;
+    font-weight: 400 !important;
+    padding: 5px 10px;
+    font-size: 12px !important;
+    border-radius: 4px;
+}
+
+.ph-label{
+    background-color: #DA552F !important;
+}
+
+.new-label{
+    background-color: #4CAF50 !important;
+}
+
+.today-video .img-name{
+    font-size: 20px;
+    right: 90px;
+}
+
+.img-name.video-title{
+    bottom: 10px;
+    right: 30px;
+    font-size: 20px;
+}
+
+#drone.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Park-drone_thumb.jpg);
+}
+
+#traffic.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-blurred2_thumb.jpg);
+}
+
+#shrimps.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/shrimps_thumb.jpg);
+}
+
+#birds.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/birds_thumb.jpg);
+}
+
+#typing.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Typing_thumb.jpg);
+}
+
+#sq2.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-sq2_thumb.jpg);
+}
+
+#beach-sq.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-beach-sq_thumb.jpg);
+}
+
+#yoga.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-yoga_thumb.jpg);
+}
+
+#tree.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-Tree_thumb.jpg);
+}
+
+#market-mcu.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-market-mcu_thumb.jpg);
+}
+
+#market-general.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-market-general_thumb.jpg);
+}
+
+#market2.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-market2_thumb.jpg);
+}
+
+#market.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-Market_thumb.jpg);
+}
+
+#beach2.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-beach2_thumb.jpg);
+}
+
+#beach.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-beach_thumb.jpg);
+}
+
+#highrise.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-Highrise_thumb.jpg);
+}
+
+#flowers.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-flowers_thumb.jpg);
+}
+
+#yoyo.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-Yoyo_thumb.jpg);
+}
+
+#fish.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-fish_thumb.jpg);
+}
+
+#grass.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-grass_thumb.jpg);
+}
+
+#office.grid-img {
+    background: url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-office_thumb.jpg);
+}
+
+#lamp.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-lamp_thumb.jpg);
+}
+
+#lulu.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coverr-Lulu_thumb.jpg);
+}
+
+#water.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Cloudy-water_thumb.jpg);
+}
+
+#park.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Dolores_thumb.jpg);
+}
+
+#hello.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Hello-World_thumb.jpg);
+}
+
+#puzzling.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Puzzling_thumb.jpg);
+}
+
+#boulevard.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Boulevard_thumb.jpg);
+}
+
+#fetch.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Went-Fetch_thumb.jpg);
+}
+
+#brown-grass.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Winter-Grass_thumb.jpg);
+}
+
+#agile.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Agile_thumb.jpg);
+}
+
+#sunset.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/All-set_thumb.jpg);
+}
+
+#ems.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/For-Ems_thumb.jpg);
+}
+
+#yellow.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/it-was-all-yellow_thumb.jpg);
+}
+
+#president.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Mr.-President_thumb.jpg);
+}
+
+#vine.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/On-the-vine_thumb.jpg);
+}
+
+#scratch.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Scratch-that_thumb.jpg);
+}
+
+#wes.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/For_Wes_thumb.jpg);
+}
+
+#drips.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Drips_thumb.jpg);
+}
+
+#hosin.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Hosin_thumb.jpg);
+}
+
+#right.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Right-way_thumb.jpg);
+}
+
+#ristretto.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Ristretto_thumb.jpg);
+}
+
+#crosswalk.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Crosswalk_thumb.jpg);
+}
+
+#balance.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/White-balance_thumb.jpg);
+}
+
+#ideas.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Ideas_thumb.jpg);
+}
+
+#woods.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Into-The-Woods_thumb.jpg);
+}
+
+#clark.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/its-clark_thumb.jpg);
+}
+
+#mickey.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Mickey_thumb.jpg);
+}
+
+#sail.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Sail-Away_thumb.jpg);
+}
+
+#strum.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Strum-Away_thumb.jpg);
+}
+
+#weekend.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Weekend_thumb.jpg);
+}
+
+#carmela.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Carmela_thumb.jpg);
+}
+
+#nights.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/City-Nights_thumb.jpg);
+}
+
+#comfy.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Comfy_thumb.jpg);
+}
+
+#heads.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Head-or-Tails_thumb.jpg);
+}
+
+#newyork.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/New-York-Jam_thumb.jpg);
+}
+
+#point.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Point-of-View_thumb.jpg);
+}
+
+#slide.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Slide-Show_thumb.jpg);
+}
+
+#temple.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Temple_thumb.jpg);
+}
+
+#numbers.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Typing-numbers_thumb.jpg);
+}
+
+#tomato.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Tomato-Tomato_thumb.jpg);
+}
+
+#bulbs.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Dancing-Bulbs_thumb.jpg);
+}
+
+
+#flow.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Flow_thumb.jpg);
+}
+
+
+#nowhere.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Nowhere_thumb.jpg);
+}
+
+
+#sugar.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Sugar_thumb.jpg);
+}
+
+
+#hose.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Hose_thumb.jpg);
+}
+
+
+#poyke.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Poyke_thumb.jpg);
+}
+
+
+#working.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Working-Space_thumb.jpg);
+}
+
+#android.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Android-Scroll_thumb.jpg);
+}
+
+#beach-camera.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Beach-Camera_thumb.jpg);
+}
+
+#iphone.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/iPhone-Scroll_thumb.jpg);
+}
+
+#chair.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Lonely-Chair_thumb.jpg);
+}
+
+#surfers.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Surfers-Paradise_thumb.jpg);
+}
+
+#dock.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Dock_thumb.jpg);
+}
+
+#veggie.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Veggie-Stand_thumb.jpg);
+}
+
+#percent.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/50-Percent-Off_thumb.jpg);
+}
+
+#city-walk.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/City-Walking_thumb.jpg);
+}
+
+#clothing.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/clothing_thumb.jpg);
+}
+
+#morning.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Productive-Morning_thumb.jpg);
+}
+
+#nature.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Nature-Sunset_thumb.jpg);
+}
+
+#fire.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Open-Fire_thumb.jpg);
+}
+
+#wework.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/We-Work-We-Wait_thumb.jpg);
+}
+
+#girl.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Girls-Code_thumb.jpg);
+}
+
+#cow.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Holy-Cow_thumb.jpg);
+}
+
+#beach-home.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Home_thumb.jpg);
+}
+
+#pot.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Melting-pot_thumb.jpg);
+}
+
+#nyc.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/NYC-Traffic_thumb.jpg);
+}
+
+#sky.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Sky-High_thumb.jpg);
+}
+
+#fountain.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Fountain_thumb.jpg);
+}
+
+#director.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/A-Director-View_thumb.jpg);
+}
+
+#beach-ball.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Beach-Ball_thumb.jpg);
+}
+
+#escalation.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Escalation_thumb.jpg);
+}
+
+#free-cows.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Free-Cows_thumb.jpg);
+}
+
+#love.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/I-Love-You_thumb.jpg);
+}
+
+#mockups.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Mock-up_thumb.jpg);
+}
+
+#puppy.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Puppy_thumb.jpg);
+}
+
+#working-man.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/a-working-man_thumb.jpg);
+}
+
+#boarding.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Boarding_thumb.jpg);
+}
+
+#construction.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Construction_thumb.jpg);
+}
+
+#go-fish.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Go-Fish_thumb.jpg);
+}
+
+#night-traffic.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Night-Traffic_thumb.jpg);
+}
+
+#cocktails.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Three-Cocktails_thumb.jpg);
+}
+
+#yoga-time.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Yoga-Time_thumb.jpg);
+}
+
+#beach-please.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Beach-please_thumb.jpg);
+}
+
+#billowing.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Billowing_thumb.jpg);
+}
+
+#home-work.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Home-work_thumb.jpg);
+}
+
+#huppa.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Huppa_thumb.jpg);
+}
+
+#innocence.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Innocence_thumb.jpg);
+}
+
+#lawn.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Mowing-The-Lawn_thumb.jpg);
+}
+
+#working-it.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Working-it_thumb.jpg);
+}
+
+#brooklyn.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Brooklyn_thumb.jpg);
+}
+
+#coffee.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coffee-Shot_thumb.jpg);
+}
+
+#leaf.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Falling-Leaf_thumb.jpg);
+}
+
+#hanging.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Hanging-Out_thumb.jpg);
+}
+
+#karate.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Karate-Kids_thumb.jpg);
+}
+
+#nyc-traffic.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/NYC-Blurred-Traffic_thumb.jpg);
+}
+
+#sunflower.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Sun-Flower_thumb.jpg);
+}
+
+#broadway.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Broadway_thumb.jpg);
+}
+
+#curiosity.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Curiosity_thumb.jpg);
+}
+
+#draw.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Draw-Something_thumb.jpg);
+}
+
+#egg.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Egg-Shop_thumb.jpg);
+}
+
+#market-nyc.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Market_thumb.jpg);
+}
+
+#merry.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Merry-Go-Round_thumb.jpg);
+}
+
+#street-view.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Street-View_thumb.jpg);
+}
+
+#agua.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Agua-natural_thumb.jpg);
+}
+
+#airtaxi.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Airtaxi_thumb.jpg);
+}
+
+#big-city-life.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Big-City-Life_thumb.jpg);
+}
+
+#crossroad.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Crossroad_thumb.jpg);
+}
+
+#gaiserr.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Gaiserr_thumb.jpg);
+}
+
+#going-places.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Going-Places_thumb.jpg);
+}
+
+#relaxation.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Relaxation_thumb.jpg);
+}
+
+#blurry-night.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/blurry-night_thumb.jpg);
+}
+
+#cut.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Cut-n-Paste_thumb.jpg);
+}
+
+#diverrs.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Diverrs_thumb.jpg);
+}
+
+#hitch.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Hitch-hiking_thumb.jpg);
+}
+
+#lake.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Lake-vibes_thumb.jpg);
+}
+
+#horse.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Rolling-horse_thumb.jpg);
+}
+
+#yellow-stone.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Yellow-stone_thumb.jpg);
+}
+
+#coder.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coder_thumb.jpg);
+}
+
+#fruity.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Fruity_thumb.jpg);
+}
+
+#love-boat.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Love-Boat_thumb.jpg);
+}
+
+#meeting-room.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Meeting-Room_thumb.jpg);
+}
+
+#night-out.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Night-Out_thumb.jpg);
+}
+
+#buttons.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Push-The-Buttons_thumb.jpg);
+}
+
+#boat.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Boat_thumb.jpg);
+}
+
+#jackpot.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Jackpot_thumb.jpg);
+}
+
+#stream.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Main-Stream_thumb.jpg);
+}
+
+#bbq.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Night-BBQ_thumb.jpg);
+}
+
+#camping.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Out-Camping_thumb.jpg);
+}
+
+#shakshuka.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Shakshuka_thumb.jpg);
+}
+
+#traffic-tree.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Traffic-Tree_thumb.jpg);
+}
+
+#type.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Type_thumb.jpg);
+}
+
+#chandelier.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Chandelier_thumb.jpg);
+}
+
+#drums.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Drums_thumb.jpg);
+}
+
+#earlybird.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Earlybird_thumb.jpg);
+}
+
+#fire-ceremony.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Fire-ceremony_thumb.jpg);
+}
+
+#mathura.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Mathura-Bazaar_thumb.jpg);
+}
+
+#ganges.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/On-The-Ganges_thumb.jpg);
+}
+
+#windy.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/windy_thumb.jpg);
+}
+
+#backyard.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Backyard_thumb.jpg);
+}
+
+#creek.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Bull-Creek_thumb.jpg);
+}
+
+#country.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Country-Girl_thumb.jpg);
+}
+
+#wine.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Drink-Wine_thumb.jpg);
+}
+
+#goat.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Goat-With-The-Wind_thumb.jpg);
+}
+
+#swan.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/One-Swan_thumb.jpg);
+}
+
+#swans.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Three-Swans_thumb.jpg);
+}
+
+#aloha.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Aloha-Mundo_thumb.jpg);
+}
+
+#cheer.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Cheer-Up_thumb.jpg);
+}
+
+#coffee-jet.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Coffee-Jet_thumb.jpg);
+}
+
+#hoola.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Hoola_thumb.jpg);
+}
+
+#horizontal.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Horizontal_thumb.jpg);
+}
+
+#typer.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Typer_thumb.jpg);
+}
+
+#undo.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Undo_thumb.jpg);
+}
+
+#boat-alone.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Boat-Alone_thumb.jpg);
+}
+
+#infinity.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Infinity_thumb.jpg);
+}
+
+#vibes.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Ma-Vibes_thumb.jpg);
+}
+
+#runner.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Runner_thumb.jpg);
+}
+
+#slash.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Slash_thumb.jpg);
+}
+
+#sparks.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Sparks_thumb.jpg);
+}
+
+#white-board.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/White-Board_thumb.jpg);
+}
+
+#santa.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Cycling-Santa_thumb.jpg);
+}
+
+#happy-street.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Happy-Street_thumb.jpg);
+}
+
+#clouds.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/In-The-Clouds_thumb.jpg);
+}
+
+#xmas.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Merry-Xmas_thumb.jpg);
+}
+
+#forward.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Moving-Forward_thumb.jpg);
+}
+
+#slow-dog.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Slow-Dog_thumb.jpg);
+}
+
+#thin-ice.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Thin-Ice_thumb.jpg);
+}
+
+#skate.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Skate_thumb.jpg);
+}
+
+#duck-duck.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Duck-Duck-Go_thumb.jpg);
+}
+
+#go-goat.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Go-Goat_thumb.jpg);
+}
+
+#major-tom.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Major-Tom_thumb.jpg);
+}
+
+#pour.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Pour_thumb.jpg);
+}
+
+#under.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Under_thumb.jpg);
+}
+
+#wall-sketching.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Wall-Sketching_thumb.jpg);
+}
+
+#two-traffic.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/2-Ways-Traffic_thumb.jpg);
+}
+
+#purple-balloon.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/A-Purple-Balloon_thumb.jpg);
+}
+
+#pc-typing.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/PC-Typing_thumb.jpg);
+}
+
+#plug-n-play.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Plug-and-Play_thumb.jpg);
+}
+
+#puddle.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Puddle_thumb.jpg);
+}
+
+#scroll-it.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Scroll-It_thumb.jpg);
+}
+
+#walking-away.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Walking-Away_thumb.jpg);
+}
+
+#acro.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Acro_thumb.jpg);
+}
+
+#blue-bottle.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Blue-Bottle_thumb.jpg);
+}
+
+#cello-guy.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Cello-Guy_thumb.jpg);
+}
+
+#good-mood.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Good-Mood_thumb.jpg);
+}
+
+#pigeon.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Pigeon-Impossible_thumb.jpg);
+}
+
+#rush-hour.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Rush-Hour_thumb.jpg);
+}
+
+#valentines.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Valentines_thumb.jpg);
+}
+
+#baggage.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Baggage-Claim_thumb.jpg);
+}
+
+#fish-tank.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Fish-Tank_thumb.jpg);
+}
+
+#west.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Go-West_thumb.jpg);
+}
+
+#green.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Green_thumb.jpg);
+}
+
+#red.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Red_thumb.jpg);
+}
+
+#tourist.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-Tourist_thumb.jpg);
+}
+
+#ups-downs.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Ups-And-Downs_thumb.jpg);
+}
+
+#abcd.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/abcd_thumb.jpg);
+}
+
+#bug-life.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Bug-Life_thumb.jpg);
+}
+
+#cruise.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Cruise-Control_thumb.jpg);
+}
+
+#depth.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Depth-of-Field_thumb.jpg);
+}
+
+#river.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/River-Side_thumb.jpg);
+}
+
+#dj.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/The-DJ_thumb.jpg);
+}
+
+#yes-no.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Yes-No_thumb.jpg);
+}
+
+#beach-birds.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Beach-and-birds_thumb.jpg);
+}
+
+#blurry-people.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Blurry-People_thumb.jpg);
+}
+
+#merica.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Merica_thumb.jpg);
+}
+
+#screens.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Screens_thumb.jpg);
+}
+
+#symmetric-traffic.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Symmetric-Traffic_thumb.jpg);
+}
+
+#up.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Up_thumb.jpg);
+}
+
+#working-house.grid-img{
+    background:url(https://s3-us-west-2.amazonaws.com/coverr/poster/Working-House_thumb.jpg);
+}
+
+.loading-overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    padding: 15px 15px 22px;
+}
+
+.loading-overlay .loading-container{
+    /*background-color: rgba(0, 0, 0, 0.7);*/
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    display: table;
+}
+
+.loading-container .loading-indicator{
+    padding: 10px;
+    font-size: 40px;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    color: #fff;
+}
+
+.btn-veedme,
+.btn-veedme:focus{
+    background-color: #efd336;
+    outline: none;
+}
+
+.btn-veedme:hover {
+    background-color: #E4C931;
+
+}
+
+.btn-veedme:active{
+    background-color: #E4C931;
+    background-image: -webkit-radial-gradient(circle, #E4C931 10%, #efd336 11%);
+    background-image: -o-radial-gradient(circle, #E4C931 10%, #efd336 11%);
+    background-image: radial-gradient(circle, #E4C931 10%, #efd336 11%)
+}
+
+.btn-codersclan,
+.btn-codersclan:focus{
+    background-color: #DE6839;
+
+    outline: none;
+    color: #fff;
+}
+
+.btn-codersclan:hover {
+    background-color: #d04a2e;
+    color: #fff;
+
+}
+
+.btn-codersclan:active{
+    background-color: #d04a2e;
+    background-image: -webkit-radial-gradient(circle, #d04a2e 10%, #DE6839 11%);
+    background-image: -o-radial-gradient(circle, #d04a2e 10%, #DE6839 11%);
+    background-image: radial-gradient(circle, #d04a2e 10%, #DE6839 11%)
+}
+
+.heart-color{
+    color: #FFA4B4;
+}
+
+.navbar-coverr{
+    background-color: #333;
+}
+
+.navbar-coverr .navbar-nav>li>a{
+    color: #fff;
+}
+
+.navbar-coverr .navbar-nav>li>a:hover,
+.navbar-coverr .navbar-nav>li>a:focus{
+    color: #ccc;
+}
+.navbar-coverr .navbar-nav > .active > a,
+.navbar-coverr .navbar-nav > .active > a:hover,
+.navbar-coverr .navbar-nav > .active > a:focus {
+    color: #ccc;
+    background-color: #666;
+}
+
+.alert-fixed {
+    position: fixed;
+    top: 55px;
+    right: 0;
+    width: 100%;
+    z-index: 1020;
+    text-align: center;
+    box-shadow: 0 1px 5px #eee;
+    display: none;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+}
+
+/* Overwrite Bootstrap Uppercase on buttons */
+
+.btn {
+    text-transform: inherit;
+}
+
+.ph-alert{
+    background-color: #DA552F;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    padding: 10px 5px 5px;
+    font-size: 20px;
+    display: none;
+}
+
+.ph-close{
+    font-size: 18px;
+    color: #fff;
+    margin: 5px 10px;
+}
+
+.ph-close:hover,
+.ph-close:focus{
+    color: #eee;
+}
+
+.logo-alert{
+    background-color: #66bb6a;
+    color: #fff;
+    position: absolute;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    z-index: 100;
+    text-align: center;
+    padding: 10px 5px 5px;
+    font-size: 16px;
+}
+
+.logo-alert a{
+    color: #333;
+}
+
+#mce-EMAIL{
+    border-radius: 4px;
+    background-color: #FFF;
+    padding: 10px;
+}
+
+#Rainbow {
+    height: 20px;
+    opacity: 0.9;
+    overflow: hidden;
+    position: absolute;
+    top: 57px;
+    white-space: nowrap;
+    width: 100%;
+    z-index: 90;
+}
+#Rainbow .rainbow-color {
+    height: 100%;
+    /*margin-right: 20px;*/
+    margin-right: -5px;
+    width: 4%;
+    display: inline-block;
+}
+#Rainbow .red {
+    background-color: #d04a2e;
+    /*box-shadow: 25px 0 50px 25px #D10000;*/
+}
+#Rainbow .orange {
+    background-color: #fc9c01;
+    /*box-shadow: -25px 0 50px 25px #FF6622, 25px 0 50px 25px #FF6622;*/
+}
+#Rainbow .yellow {
+    background-color: #eecc0e;
+    /*box-shadow: -25px 0 50px 25px #FFDA21, 25px 0 50px 25px #FFDA21;*/
+}
+#Rainbow .green {
+    background-color: #259d35;
+    /*box-shadow: -25px 0 50px 25px #34C726, 25px 0 50px 25px #34C726;*/
+}
+#Rainbow .blue {
+    background-color: #5496bf;
+    /*box-shadow: -25px 0 50px 25px #1133CC, 25px 0 50px 25px #1133CC;*/
+}
+#Rainbow .indigo {
+    background-color: #09314c;
+    /*box-shadow: -25px 0 50px 25px #220066, 25px 0 50px 25px #220066;*/
+}
+#Rainbow .violet {
+    background-color: #342044;
+    /*box-shadow: -25px 0 50px 25px #330044;*/
+}
+
+#rainbow-text{
+    text-align: center;
+    position: absolute;
+    top: 3px;
+    width: 100%;
+    color: #fff;
+    font-size: 10px;
+    font-weight: 700;
+}
+
+.share-button-banner{
+    display: table;
+    text-align: center;
+    border: 2px solid #fff;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    margin-bottom: 20px;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    font-size: 16px;
+}
+
+.share-button-banner .share-container{
+    display: table-cell;
+}
+
+.share-container .share-content{
+    vertical-align: middle;
+}
+
+.share-button-banner:hover{
+    color: #fff !important;
+}
+
+#twitter-button.share-button-banner:hover{
+    border-color: #00B4E0;
+    background-color: #00B4E0;
+}
+
+#facebook-button.share-button-banner:hover{
+    border-color: #255C95;
+    background-color: #255C95;
+}
+
+#google-button.share-button-banner:hover{
+    border-color: #F1403A;
+    background-color: #F1403A;
+}
+
+.copy-button{
+    position: absolute;
+    bottom: 12px;
+    right: 21px;
+}
+
+.follow-button-banner{
+    display: inline-table;
+    text-align: center;
+    border: 2px solid #777;
+    width: 35px;
+    height: 35px;
+    border-radius: 100%;
+    text-decoration: none;
+    cursor: pointer;
+    color: #777;
+    font-size: 16px;
+    margin: 5px 5px 10px;
+}
+
+.follow-button-banner .follow-container{
+    display: table-cell;
+}
+
+.follow-container .follow-content{
+    vertical-align: middle;
+}
+
+#twitter-follow-button.follow-button-banner:hover{
+    color: #fff;
+    background-color: #00B4E0;
+    border-color: #00B4E0;
+}
+
+#facebook-follow-button.follow-button-banner:hover{
+    color: #fff;
+    background-color: #255C95;
+    border-color: #255C95;
+}
+
+#instagram-follow-button.follow-button-banner:hover{
+    color: #fff;
+    background-color: #125688;
+    border-color: #125688;
+}
+
+.affix-top{
+    position: absolute;
+    top: 35%;
+    left: 10px;
+    z-index: 1020;
+}
+
+.affix{
+    margin: 80px 10px;
+    z-index: 1020;
+}
+
+.affix-bottom{
+    z-index: 1020;
+}
+
+.affix .share-button-banner{
+    color: #999;
+    border-color: #999;
+}
+
+/* Contributer code */
+
+.con-box {
+    background: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 5%;
+    margin-bottom: 30px;
+}
+
+.subtitle a {
+    margin: 0 0 20px;
+    font-size: 16px;
+    line-height: 1.6em;
+}
+
+.subtitle a:hover {
+    text-decoration: none;
+}
+
+.avatar img {
+    margin-left: auto;
+    margin-right: auto;
+}

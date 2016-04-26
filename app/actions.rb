@@ -3,7 +3,7 @@ helpers do
   # Returns nil if the user is not logged in
   def current_user
     if session[:user_id]
-      User.find(session[:user_id]).email
+      User.find(session[:user_id])
     end
   end
 end
@@ -24,12 +24,17 @@ get '/new' do
 end
 
 post '/songs' do
-  @song = Song.new(
+  artist = Artist.where(name: params[:artist]).first_or_create
+  # @song = Song.new(params)
+   # {"artist"=>"Hello", "title"=>"Hello", "lyrics"=>"Helo", "url"=>"www.hello.com"}
+  @song = Song.new({
     title: params[:title],
     genre: params[:genre],
     lyrics: params[:lyrics],
-    lyrics: params[:lyrics]
-    )
+    url: params[:url]
+    })
+  @song.artist = artist
+  @song.user = current_user
   if @song.save
     redirect '/songs'
   else
@@ -39,13 +44,12 @@ end
 
 get '/songs/:id' do
   @song = Song.find params[:id]
-  erb :'show'
+  erb :show
 end
 
-# How do I edit the below????
-get '/show/:userid' do
-  @songs = Song.where(:author => params[:userid])
-  erb :authormessages
+get '/show/:ketchup' do
+  @songs = Song.where(:user_id => params[:ketchup])
+  erb :usersongs
 end
 
 get '/signup' do
@@ -87,7 +91,7 @@ post '/login' do
     # the database.
     #     user = User.find(session[:user_id])
     session[:user_id] = user.id
-    redirect '/new'
+    redirect '/songs'
   else
     # Load the home page. 
     @message = "Invalid username or password."

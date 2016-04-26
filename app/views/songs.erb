@@ -1,11 +1,26 @@
+<a href="/new">Add New Song</a>
+
 <% @songs.each do |song| %>
   <div class="song">
     <h3><a href="/songs/<%= song.id %>"><small>(Added by: <%=  song.user.try(:name)%>)</small></h3>
+    <p>Title:
+      <i><font color="green"><%= song.title %></font></i>
+    </p>
+    <p>Lyrics:
+      <i><font color="blue"><%= song.lyrics %></font></i>
+    </p>
+    <hr width="50%" align="left">
+  </div>
+<% end %>
+
+<% @songs.each do |song| %>
+  <div class="song">
+    <h3><a href="/songs/<%= song.id %>"><small>(by: <%= song.user.name %>)</small></h3>
     <p>
       <i><font color="green"><%= song.title %></font></i>
     </p>
     <p>
-      <i><font color="blue"><%= song.lyrics %></font></i>
+      <i><font color="blue"><%= song.url %></font></i>
     </p>
     <hr width="50%" align="left">
   </div>
